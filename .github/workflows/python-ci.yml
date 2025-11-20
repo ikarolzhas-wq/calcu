@@ -33,8 +33,7 @@ jobs:
         pytest --maxfail=1 --disable-warnings --junitxml=test-results/report.xml
 
     - name: Upload test results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: pytest-report
         path: test-results/report.xml
-  
